@@ -2,7 +2,9 @@ const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize(process.env.DB_DBNAME, process.env.DB_USERNAME, process.env.DB_PASSWORD, {
   host: process.env.DB_HOST,
-  dialect: 'mysql', // You can use 'mysql', 'postgres', 'sqlite', or 'mariadb'
+  dialect: 'mysql',
+  waitForConnections: true,
+  // You can use 'mysql', 'postgres', 'sqlite', or 'mariadb'
 });
 
 // Test the database connection

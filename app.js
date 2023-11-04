@@ -29,8 +29,6 @@ app.use('/api', bookingRoutes);
 
 
 // Start the server
-app.listen(() => {
-  console.log(`Server is running on port ${port}`);
-});
+app.listen(()=>console.log('your server is running!!!'));
 
 
