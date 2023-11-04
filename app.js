@@ -29,6 +29,6 @@ app.use('/api', bookingRoutes);
 
 
 // Start the server
-app.listen(()=>console.log('your server is running!!!'));
+app.listen(port,()=>console.log('your server is running!!!'));
 
 
