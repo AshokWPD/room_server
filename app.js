@@ -14,7 +14,9 @@ const bookingRoutes = require('./routes/booking_route');
 app.use(bodyParser.json({ limit: '300mb' }));
 app.use(express.json({ limit: "300mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '300mb' }));
-
+app.get('/', (req, res) => {
+    res.send('hello world....................................................................')
+  })
 
 sequelize.sync();
 
